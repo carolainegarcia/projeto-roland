@@ -75,7 +75,7 @@ h5 {
   justify-content: space-between;
   align-items: center;
   padding: 0 3rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 #home {
@@ -547,6 +547,16 @@ footer {
   box-shadow: 4px 5px 8px -4px #888;
 }
 
+i.fas.fa-3x.fa-chevron-circle-left {
+  position: absolute;
+  left: 40px;
+  margin-top: 20px;
+  color: #eee;
+  cursor: pointer;
+  z-index: 1;
+  text-shadow: 2px 3px 7px #888;
+}
+
 @media screen and (max-width: 480px) {
   body {
     background-size: cover;
@@ -854,6 +864,10 @@ footer {
   .fa,
   .fa-whatsapp {
     margin-top: 11px !important;
+  }
+
+  i.fas.fa-3x.fa-chevron-circle-left {
+    display: none;
   }
 
   @keyframes navLinkFade {
