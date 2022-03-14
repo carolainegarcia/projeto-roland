@@ -310,8 +310,8 @@ a.musica-center:hover {
   border-radius: 10px;
 }
 
-.active, .accordion:hover {
-  background-color: #f75e04;
+.accordion:hover {
+  background-color: #ff6306;
 }
 
 .accordion:after {
@@ -322,7 +322,7 @@ a.musica-center:hover {
   margin-left: 5px;
 }
 
-.active:after {
+button.accordion.active:after {
   content: "\2212";
 }
 
