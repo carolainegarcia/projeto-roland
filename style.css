@@ -119,7 +119,7 @@ h5 {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: #fff;
+  background: #ffffff;
   margin: 8px;
   transition: 0.3s;
 }
@@ -289,11 +289,53 @@ section.card button {
 
 #about p {
   text-align: justify;
-  margin: 0px 30px 0 30px;
 }
 
 a.musica-center:hover {
   color: #ff6306;
+}
+
+.accordion {
+  background-color: #d35105;
+  color: #ffffff;
+  cursor: pointer;
+  margin: 10px 0 10px;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #f75e04;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #00000000;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease-out;
+}
+
+.panel p {
+  padding: 4px 0 4px;
 }
 
 .info {
@@ -610,6 +652,10 @@ i.fas.fa-3x.fa-chevron-circle-left {
 
   #about p {
     text-align: unset;
+  }
+
+  .accordion {
+    width: auto;
   }
 
   .info {

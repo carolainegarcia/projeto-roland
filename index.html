@@ -395,11 +395,27 @@
                     experiência exclusiva.</p><br>
 
                 </p><br>
-                <p>&bull; Você é atendido pelos melhores consultores de vendas do mercado, através dos canais de
-                    atendimento
-                    disponíveis nesse site;</p>
-                <p>&bull; Seu pedido é informado diretamente à Roland;</p>
-                <p>&bull; A Roland do Brasil com merecida exclusividade entrega seu instrumento.</p><br>
+                <p>Como vai ser o processo de compra?</p>
+                <button class="accordion">Pedido</button>
+                <div class="panel">
+                    <p>Após escolher o seu produto Roland, você vai entrar em contato com nossa loja e será atendido por um de nossos consultores de vendas. Durante o atendimento, ele vai lhe confirmar os valores, forma de pagamento, disponibilidade do produto em estoque, previsão de entrega e faturamento. Estando tudo certo, vamos lhe enviar uma ficha de pedido, a qual precisa ser preenchida e devolvida. Com a ficha em mãos, o consultor de vendas vai oficializar o pedido junto a Roland do Brasil, e aguardar a confirmação e o envio do pedido de compra, para na sequência, enviarmos a você.</p>
+                    <p>Pronto! Pedido feito!</p>
+                </div>
+
+                <button class="accordion">Pagamento</button>
+                <div class="panel">
+                    <p>Todo o pagamento da sua compra será feito diretamente a Roland do Brasil (nenhum valor deve ser pago a Musica Center). Quando se tratar de compra à vista, o consultor de vendas vai lhe enviar os dados bancários da Roland, e você realiza o pagamento. Quando se tratar de compra parcelada no cartão, o próprio financeiro da Roland vai lhe enviar um link de pagamento em seu e-mail, e você faz o pagamento de forma on-line.</p>
+                    <p>Pagamento Ok! Falta pouco!</p>
+                </div>
+
+                <button class="accordion">Faturamento e entrega</button>
+                <div class="panel">
+                    <p>Seu produto será faturado e enviado pela próprio Roland do Brasil, mas todo o atendimento quanto
+                        ao faturamento, rastreamento e entrega, ou qualquer outro tipo de informação, vai ser conduzido
+                        pelo consultor de vendas que lhe atendeu. Conte sempre com ele para o que precisar!</p>
+                    <p>Agora é só aguardar a entrega e aproveitar ao máximo seu novo produto Roland!</p>
+                    <p>Processo simples, seguro e compartilhado! Tudo para lhe dar um atendimento de excelência!</p>
+                </div><br>
                 <p>A garantia <a class="musica-center" href="https://www.musicacenter.com.br" target="_blank">Musica
                         Center</a> e a qualidade Roland fazendo parceira com a sua música.</p><br>
                 <p>Toda segurança e conforto para que você tenha em detalhes todo o portfólio de instrumentos e venda
@@ -513,6 +529,23 @@
     <script type="text/javascript" src="scripts/phone-mask.js"></script>
 
     <script type="text/javascript" src="scripts/fixed-menu.js"></script>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
